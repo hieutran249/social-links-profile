@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Inter Bold';
+    src: URL('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: URL('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: URL('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    height: 40rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+.avatar {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.personal-info {
+    text-align: center;
+    row-gap: 20px;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+    display: block;
+    font-family: 'Inter Bold';
+    font-size: 2em;
+}
+
+.address {
+    color: hsl(75, 94%, 57%);
+    display: block;
+    font-family: 'Inter Bold';
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.desc {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter Regular';
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+.socials {
+    width: 100%;
+    overflow: inherit;
+}
+
+.social {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px;
+    width: auto;
+    margin-top: 1em;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Inter SemiBold'
+}
+
+.social:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    caret-color: hsl(0, 0%, 8%);
+}
+
+/* @media only screen and (min-width: 375px) {
+    .container {
+        height: 550px;
+        width: 250px;
+    }
+} */
